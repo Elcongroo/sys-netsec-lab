@@ -1,0 +1,8 @@
+# W1 build artifacts (generated, not source)
+demo/demo-static
+demo/demo-shared
+stages-demo/demo
+libcalc/*.o
+libcalc/*.a
+libcalc/*.so
+libcalc/*.so.*

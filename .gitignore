@@ -7,6 +7,9 @@ obj/
 *.so
 *.a
 *.ko
+# Preprocessor / assembly outputs
+*.i
+*.s
 
 # IDE
 .vscode/
@@ -15,11 +18,13 @@ obj/
 *.swo
 *~
 
-# CMake
+# CMake (generated)
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
-Makefile
+# project Makefiles are tracked; only ignore generated ones
+build/Makefile
+out/Makefile
 
 # Python
 __pycache__/
