@@ -1,0 +1,55 @@
+# Build outputs
+build/
+out/
+bin/
+obj/
+*.o
+*.so
+*.a
+*.ko
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# DPDK
+*.core
+
+# Debug
+core
+*.core-dump
+
+# Archives
+*.tar.gz
+*.zip
+*.tgz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Sensitive
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt.env
+# (CA/cert test fixtures committed intentionally)
