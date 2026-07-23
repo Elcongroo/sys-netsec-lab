@@ -1,4 +1,7 @@
 # W2 build artifacts
 broken-server
 broken-server-asan
+demo-asan
+demo-ubsan
+demo-vg
 *.o
