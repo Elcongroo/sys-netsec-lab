@@ -51,13 +51,23 @@ Thumbs.db
 # Logs
 *.log
 
-# Compiled lab binaries (no extension, asan/fixed variants)
+# Compiled lab binaries (no extension, asan/fixed/ubsan variants)
 *-asan
 *-ubsan
 *-fixed
-# Catch binaries in my-lab subdirectories (source files with no extension)
-phase*/week*/my-lab/intermittent-bug
-phase*/week*/my-lab/step1
+
+# Ignore compiled binaries in my-lab: block everything without an extension,
+# then un-ignore source files by their extensions
+phase*/week*/my-lab/*
+!phase*/week*/my-lab/*/
+phase*/week*/my-lab/**/*
+!phase*/week*/my-lab/**/*.c
+!phase*/week*/my-lab/**/*.h
+!phase*/week*/my-lab/**/*.md
+!phase*/week*/my-lab/**/*.sh
+!phase*/week*/my-lab/**/Makefile
+!phase*/week*/my-lab/**/README*
+!phase*/week*/my-lab/**/NOTES*
 
 # Sensitive
 *.key
