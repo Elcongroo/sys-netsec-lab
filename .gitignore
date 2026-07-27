@@ -51,6 +51,14 @@ Thumbs.db
 # Logs
 *.log
 
+# Compiled lab binaries (no extension, asan/fixed variants)
+*-asan
+*-ubsan
+*-fixed
+# Catch binaries in my-lab subdirectories (source files with no extension)
+phase*/week*/my-lab/intermittent-bug
+phase*/week*/my-lab/step1
+
 # Sensitive
 *.key
 *.pem
