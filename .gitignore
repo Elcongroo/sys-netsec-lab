@@ -51,6 +51,40 @@ Thumbs.db
 # Logs
 *.log
 
+# Ignore compiled binaries in any my-lab or demo directory
+# (no extension = likely a compiled binary)
+phase*/week*/my-lab/*
+!phase*/week*/my-lab/*/
+phase*/week*/my-lab/**/*
+!phase*/week*/my-lab/**/*.c
+!phase*/week*/my-lab/**/*.h
+!phase*/week*/my-lab/**/*.md
+!phase*/week*/my-lab/**/*.sh
+!phase*/week*/my-lab/**/Makefile
+!phase*/week*/my-lab/**/README*
+!phase*/week*/my-lab/**/NOTES*
+!phase*/week*/my-lab/**/W*LAB*
+!phase*/week*/my-lab/**/TOOL*
+!phase*/week*/my-lab/**/BROKEN*
+
+phase*/week*/demo/*
+!phase*/week*/demo/*/
+!phase*/week*/demo/*.c
+!phase*/week*/demo/*.h
+!phase*/week*/demo/*.md
+
+# Compiled binaries accidentally placed in repo root
+/epoll-server
+/epoll-echo
+/epoll-stateful
+/blocking-server
+/broken-server
+/overflow
+/uaf
+/memory-leak
+/uninit
+/double-free
+
 # Sensitive
 *.key
 *.pem
